@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Mad-lib Program</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+	<div class="content">
+	<h2>Mad-lib</h2>
+	
+	<!-- Story 1 -->
+	<div id="1s1" class="s"></div>
+	<div id="1v1" class="v"></div>
+	<div id="1s2" class="s"></div>
+	<div id="1v2" class="v"></div>
+	<div id="1s3" class="s"></div>
+	<div id="1v3" class="v"></div>
+	<div id="1s4" class="s"></div>
+	<div id="1v4" class="v"></div>
+	
+	<div id="1v6" class="v"></div>
+	<div id="1s8" class="s"></div>
+	<div id="1v7" class="v"></div>
+	<div id="1s9" class="s"></div>
+	
+	<div id="1s5" class="s"></div>
+	<div id="1v5" class="v"></div>
+	<div id="1s6" class="s"></div>
+
+
+	
+	<!-- Story 2 -->
+	<div id="2s1" class="s"></div>
+	<div id="2v1" class="v"></div>
+	<div id="2s2" class="s"></div>
+	<div id="2v2" class="v"></div>
+	<div id="2s3" class="s"></div>
+	<div id="2v3" class="v"></div>
+	<div id="2s4" class="s"></div>
+	<div id="2s5" class="s"></div>
+	<div id="2v4" class="v"></div>
+	<div id="2s6" class="s"></div>
+	<div id="2s7" class="s"></div>
+	<div id="2s8" class="s"></div>
+	<div id="2v5" class="v"></div>
+
+	<script type="text/javascript">
+		if (choice == 1)
+			{
+				document.getElementById("1s1").innerHTML = "Our story begins with a(n)";
+				document.getElementById("1v1").innerHTML = ad1 + " " + noun1;
+				document.getElementById("1s2").innerHTML = "...and they were extremely";
+				document.getElementById("1v2").innerHTML = ad2 + ".";
+				document.getElementById("1s3").innerHTML = "One day, they decided to";
+				document.getElementById("1v3").innerHTML = verb1;
+				document.getElementById("1s4").innerHTML = "a giant";
+				document.getElementById("1v4").innerHTML = noun2 + ".";
+				document.getElementById("1v6").innerHTML = con1 + "!";
+				document.getElementById("1s8").innerHTML = "That was probably a(n)";
+				document.getElementById("1v7").innerHTML = ad3;
+				document.getElementById("1s9").innerHTML = "idea.";
+				document.getElementById("1s5").innerHTML = "Now they will never";
+				document.getElementById("1v5").innerHTML = verb2;
+				document.getElementById("1s6").innerHTML = "again.";
+				
+				
+			}
+		else if (choice == 2)
+			{
+				document.getElementById("2s1").innerHTML = "Dear Santa, I have been very";
+				document.getElementById("2v1").innerHTML = ad1;
+				document.getElementById("2s2").innerHTML = "this year. So here is what I want for Christmas. Please get me a(n)";
+				document.getElementById("2v2").innerHTML = ad2 + " " + noun1;
+				document.getElementById("2s3").innerHTML = "so that I can";
+				document.getElementById("2v3").innerHTML = verb1;
+				document.getElementById("2s4").innerHTML = "with my friends.";
+				document.getElementById("2s5").innerHTML = "If you do this for me, I promise that I will not";
+				document.getElementById("2v4").innerHTML = verb2;
+				document.getElementById("2s6").innerHTML = "my mom again.";
+				document.getElementById("2s7").innerHTML = "Yours truly,";
+				document.getElementById("2s8").innerHTML = "Little "
+				document.getElementById("2v5").innerHTML = noun2;
+				
+			}
+	</script>
+	<p class="outro">Thank you for checking out my "Mad-lib" JavaScript Program!</p>
+	<p>Have a wonderful day!</p>
+	<p><em>-Aaron</em></p>
+	<img src="img/husky.gif">
+	</div>
+	</body>
+</html>

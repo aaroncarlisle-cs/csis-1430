@@ -1,0 +1,416 @@
+/* sets default margin and padding */
+* {padding: 0; margin: 0;}
+
+/* starts basic oval for his face with appropriate color */
+.face
+{
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	height: 400px;
+	width: 600px;
+	border-radius: 90% / 100%;
+	background-color: #FFDCB4;
+	z-index: 0;
+}
+/* creates a yellow oval which represents the bottom of his beanie */
+.hatbot
+{
+	position: absolute;
+	top: 180px;
+	left: 300px;
+	height: 240px;
+	width: 600px;
+	border-radius: 90% / 100%;
+	background-color: #F2CE1B;
+	z-index: 3;
+}
+/* covers the yellow oval on his beanie with a face colored oval and uses z-index to create the illusion of a beanie brim */
+.facetop
+{
+	position: absolute;
+	top: 205px;
+	left: 310px;
+	height: 270px;
+	width: 590px;
+	border-radius: 90% / 100%;
+	background-color: #FFDCB3;
+	z-index: 5;
+}
+
+/* black oval that uses z-indexing and careful positionining to create a chin outline under .facetop */
+.facetopfat
+{
+	position: absolute;
+	top: 240px;
+	left: 325px;
+	height: 240px;
+	width: 550px;
+	border-radius: 90% / 100%;
+	background-color: #000000;
+	z-index: 4;
+}
+
+/* main blue oval of his beanie that stretches across the width of his head */
+.hat
+{
+	position: absolute;
+	top: 90px;
+	left: 335px;
+	height: 250px;
+	width: 540px;
+	border-radius: 100% / 100%;
+	background-color: #5BCCD9;
+	z-index: 1;
+}
+/* blue beanie colored oval that helps to fill in the left side of his head where there are gaps in the div */
+.hatl
+{
+	position: absolute;
+	top: 170px;
+	left: 300px;
+	height: 200px;
+	width: 250px;
+	border-radius: 100% / 100%;
+	background-color: #5BCCD9;
+	z-index: 1;
+}
+/* blue beanie colored oval that helps to fill in the right side of his head where there are gaps in the div */
+.hatr
+{
+	position: absolute;
+	top: 170px;
+	left: 650px;
+	height: 200px;
+	width: 250px;
+	border-radius: 100% / 100%;
+	background-color: #5BCCD9;
+	z-index: 1;
+}
+/* yellow ball on top of his beanie to help give the illusion of where his head is pointed */
+.hatball
+{
+	position: absolute;
+	top: 65px;
+	left: 450px;
+	height: 70px;
+	width: 80px;
+	border-radius: 100% / 100%;
+	background-color: #F2CE1B;
+	z-index: 1;
+
+}
+/* black oval for left eye that uses z-indexing underneath the white portion to create an outline */
+.eyelo
+{
+	position: absolute;
+	top: 250px;
+	left: 530px;
+	height: 120px;
+	width: 100px;
+	border-radius: 100% / 100%;
+	background-color: #000000;
+	transform: skewY(20deg);
+	z-index: 5;
+}
+/* white skewed oval for left eye */
+.eyel
+{
+	position: absolute;
+	top: 250px;
+	left: 530px;
+	height: 118px;
+	width: 98px;
+	border-radius: 100% / 100%;
+	background-color: #ffffff;
+	transform: skewY(20deg);
+	z-index: 5;
+}
+/* black oval for right eye that uses z-indexing underneath the white portion to create an outline */
+.eyero
+{
+	position: absolute;
+	top: 250px;
+	left: 650px;
+	height: 120px;
+	width: 100px;
+	border-radius: 100% / 100%;
+	background-color: #000000;
+	transform: skewY(-20deg);
+	z-index: 6;
+}
+/* white skewed oval for right eye */
+.eyer
+{
+	position: absolute;
+	top: 250px;
+	left: 650px;
+	height: 118px;
+	width: 98px;
+	border-radius: 100% / 100%;
+	background-color: #ffffff;
+	transform: skewY(-20deg);
+	z-index: 6;
+}
+/* eye pupil left */
+.eyepl
+{
+	position: absolute;
+	top: 320px;
+	left: 590px;
+	height: 20px;
+	width: 20px;
+	border-radius: 100% / 100%;
+	background-color: #000000;
+	z-index: 7;
+}
+/* eye pupil right */
+.eyepr
+{
+	position: absolute;
+	top: 320px;
+	left: 670px;
+	height: 20px;
+	width: 20px;
+	border-radius: 100% / 100%;
+	background-color: #000000;
+	z-index: 7;
+}
+/* black oval mouth shape with 60% / 100% radius */
+.mouth
+{
+	position: absolute;
+	top: 385px;
+	left: 585px;
+	height: 60px;
+	width: 100px;
+	border-radius: 60% / 100%;
+	background-color: #000000;
+	z-index: 7;
+	transform: skewY(-0deg);
+}
+/* face colored oval placed at the bottom of the mouth to give the illusion of speaking */
+.mouthcover
+{
+	position: absolute;
+	top: 435px;
+	left: 625px;
+	height: 20px;
+	width: 40px;
+	border-radius: 60% / 100%;
+	background-color: #FFDCB4;
+	z-index: 7;
+	transform: skewY(-0deg);
+}
+/* skewed rectangle carefully placed over left eye */
+.eyebrowl
+{
+	position: absolute;
+	top: 237px;
+	left: 525px;
+	height: 10px;
+	width: 100px;
+	background-color: #000000;
+	z-index: 8;
+	transform: skewY(25deg);
+}
+/* skewed rectangle carefully placed over right eye */
+.eyebrowr
+{
+	position: absolute;
+	top: 230px;
+	left: 650px;
+	height: 10px;
+	width: 80px;
+	background-color: #000000;
+	z-index: 8;
+	transform: skewY(-35deg);
+}
+/* giant red oval with lowest z-index */
+.body
+{
+	position: absolute;
+	top: 320px;
+	left: 270px;
+	height: 450px;
+	width: 700px;
+	background-color: #D91A3D;
+	z-index: -2;
+	border-radius: 60% / 100%;
+}
+/* black vertical rectangle with z-index just above red body */
+.zipper
+{
+	position: absolute;
+	top: 320px;
+	left: 650px;
+	height: 450px;
+	width: 5px;
+	background-color: #000000;
+	z-index: -1;
+	border-radius: 60% / 100%;
+}
+/* oval for top zipper button */
+.button1
+{
+	position: absolute;
+	top: 570px;
+	left: 620px;
+	height: 30px;
+	width: 15px;
+	border-radius: 100% / 100%;
+	background-color: #000000;
+	z-index: 7;
+}
+/* oval for bottom zipper button */
+.button2
+{
+	position: absolute;
+	top: 630px;
+	left: 620px;
+	height: 30px;
+	width: 15px;
+	border-radius: 100% / 100%;
+	background-color: #000000;
+	z-index: 7;
+}
+/* red oval that's rotated with a transform to protrude on his left and create an arm */
+.arml
+{
+	position: absolute;
+	top: 400px;
+	left: 200px;
+	height: 250px;
+	width: 150px;
+	background-color: #D91A3D;
+	z-index: -2;
+	border-radius: 50% / 100%;
+	transform: rotate(40deg);
+}
+/* same as above but for the right side */
+.armr
+{
+	position: absolute;
+	top: 450px;
+	left: 800px;
+	height: 150px;
+	width: 200px;
+	background-color: #D91A3D;
+	z-index: -2;
+	border-radius: 50% / 100%;
+	transform: rotate(-40deg);
+}
+/* wide yellow oval that's skewed to look like a fist */
+.glovel
+{
+	position: absolute;
+	top: 550px;
+	left: 130px;
+	height: 100px;
+	width: 200px;
+	background-color: #F2CE1B;
+	z-index: -1;
+	border-radius: 50% / 100%;
+	transform: skewX(-20deg);
+}
+/* narrow yellow oval that's skewed to look like the hand is extended */
+.glover
+{
+	position: absolute;
+	top: 520px;
+	left: 880px;
+	height: 130px;
+	width: 130px;
+	background-color: #F2CE1B;
+	z-index: -1;
+	border-radius: 50% / 100%;
+	transform: skewX(-10deg);
+}
+/* wide blue rectangle to set a background */
+.sky
+{
+	position: absolute;
+	top: 50px;
+	left: 115px;
+	height: 430px;
+	width: 925px;
+	background-color: #184856;
+	z-index: -4;
+}
+/* skewed green oval with z-index just above the sky to represent mountains or hills in the background */
+.mtn1
+{
+	position: absolute;
+	top: 240px;
+	left: 150px;
+	height: 300px;
+	width: 250px;
+	background-color: #0A403A;
+	z-index: -3;
+	border-radius: 100% / 80%;
+	transform: skewX(-30deg);
+}
+/* same as above but for the right side of the frame */
+.mtn2
+{
+	position: absolute;
+	top: 350px;
+	left: 240px;
+	height: 300px;
+	width: 800px;
+	background-color: #0A403A;
+	z-index: -3;
+	border-radius: 50% / 100%;
+	transform: skewX(-10deg);
+}
+/* rectangular top portion of the picture frame  */
+.ftop
+{
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 120px;
+	width: 925px;
+	height: 50px;
+	z-index: 7;
+}
+/* rectangular bottom portion of the picture frame */
+.fbottom
+{
+	background-color: black;
+	position: absolute;
+	top: 700px;
+	left: 120px;
+	width: 925px;
+	height: 50px;
+	z-index: 7;
+}
+/* a white rectangle set just below the bottom of the black picture frame to mask where the body clips */
+.fbottomcover
+{
+	background-color: white;
+	position: absolute;
+	top: 750px;
+	left: 115px;
+	width: 925px;
+	height: 100px;
+	z-index: 7;
+}
+/* rectangular left portion of the picture frame */
+.fleft
+{
+	height: 750px;
+	width: 50px;
+	position: absolute;
+	left: 70px;
+	background-color: black;
+}
+/* rectangular right portion of the picture frame */
+.fright
+{
+	height: 750px;
+	width: 50px;
+	position: absolute;
+	left: 1000px;
+	background-color: black;
+}
