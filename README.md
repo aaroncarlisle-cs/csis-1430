@@ -18,7 +18,9 @@ Example Projects:
 ----------------
 
 :arrow_right: [Mock Pizza Delivery Site](https://aaroncarlisle-cs.github.io/csis-1430/htdocs/pizza-2)
+
 :arrow_right: [Mad-Lib Generator](https://aaroncarlisle-cs.github.io/csis-1430/htdocs/mad-lib)
+
 :arrow_right: [Tic Tac Toe](https://aaroncarlisle-cs.github.io/csis-1430/htdocs/tic-tac-toe)
 
 To Do:
