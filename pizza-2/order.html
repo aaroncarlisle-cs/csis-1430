@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Pizza Bros - Order for Delivery</title>
+			<style>
+			img.four 
+				{
+					width: 200px;
+					height: auto;
+					display: block;
+					margin: 0 auto;
+				}
+			table.toppings
+				{
+					padding: 10px 0;
+				}
+			.sizes
+				{
+					font-family: 'Oswald', sans-serif;
+					font-size: 18px;
+					padding: 5px;
+					display: inline;
+				}
+			.desc
+				{
+					font-family: 'Oswald', sans-serif;
+					font-size: 16px;
+				}
+			.disc
+				{
+					font-family: 'Oswald', sans-serif;
+					font-size: 10px;
+				}
+			td.topping
+				{
+					font-family: 'Oswald', sans-serif;
+					font-size: 18px;
+					text-align: center;
+					border: 4px solid black;
+				}
+			td.toppingpic
+				{
+					font-family: 'Oswald', sans-serif;
+					font-size: 18px;
+					padding: 0px;
+					text-align: center;
+					border: 4px solid black;
+				}
+			.right
+				{
+					float: right;
+				}
+			.left
+				{
+					clear: left;
+					float: left;
+				}
+			table.toppings img:hover
+				{
+					cursor: pointer;
+				}
+			em
+				{
+					font-size: 16px;
+				}
+			.pizzaorder
+				{
+					display: inline-block;
+					height: 5%;
+					width: auto%;
+					margin: auto;
+					padding-left: 1%;
+				}
+			</style>
+			<link type="text/css" rel="stylesheet" href="css/style.css">
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	  <!-- Layout Begin -->
+		<div class="header">
+			<p class="logo">PIZZA BROS</p>
+		</div>
+		<div class="menu">
+			<p><ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a class="active" href="order.html">ORDER</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul></p>
+		</div>
+		<div class="bgwrapper">
+		<div class="contentwrapper">
+		<div class="content">
+		
+		<!-- Page Specific Begin -->
+		<div class="title">
+			<img src="img/tomato.png" class="icon">
+			<h1>Order for Delivery</h1>
+			<img src="img/tomato.png" class="icon">
+		</div>
+		
+		<div class="left">
+			<p>
+			<table border="0" cellpadding="5" cellspacing="5">
+			<form method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
+				<tr><td><strong><label for="firstname">First Name</label></strong></td><td><strong><label for="lastname">Last Name</label></strong></td></tr>
+				<tr>
+					<td><input name="first" placeholder="First Name" type="text" id="firstname"></td>
+					<td><input name="last" placeholder="Last Name" type="text" id="lastname"></td>
+				</tr>
+				<tr><td><strong><label for="address1">Address</label></strong></td></tr>
+			</table>
+			<table border="0" cellpadding="5" cellspacing="5">
+				<tr><td><input name="add1" placeholder="Address 1" type="text" size="45" required id="address1"></td></tr>
+				<tr><td><input name="add2" placeholder="Address 2" type="text" size="45"></td></tr>
+			</table>
+			<table border="0" cellpadding="5" cellspacing="5">
+				<tr><td><strong><label for="city">City</label></strong></td><td><strong><label for="state">State</state></strong></td></tr>
+				<tr><td><input name="city" placeholder="City" type="text" id="city" required></td>
+					<td>
+						<select name="state" required id="state">
+							<option value="none" selected disabled hidden>--</option>
+							<option value="AL">AL</option>
+							<option value="AK">AK</option>
+							<option value="AR">AR</option>	
+							<option value="AZ">AZ</option>
+							<option value="CA">CA</option>
+							<option value="CO">CO</option>
+							<option value="CT">CT</option>
+							<option value="DC">DC</option>
+							<option value="DE">DE</option>
+							<option value="FL">FL</option>
+							<option value="GA">GA</option>
+							<option value="HI">HI</option>
+							<option value="IA">IA</option>	
+							<option value="ID">ID</option>
+							<option value="IL">IL</option>
+							<option value="IN">IN</option>
+							<option value="KS">KS</option>
+							<option value="KY">KY</option>
+							<option value="LA">LA</option>
+							<option value="MA">MA</option>
+							<option value="MD">MD</option>
+							<option value="ME">ME</option>
+							<option value="MI">MI</option>
+							<option value="MN">MN</option>
+							<option value="MO">MO</option>	
+							<option value="MS">MS</option>
+							<option value="MT">MT</option>
+							<option value="NC">NC</option>	
+							<option value="NE">NE</option>
+							<option value="NH">NH</option>
+							<option value="NJ">NJ</option>
+							<option value="NM">NM</option>			
+							<option value="NV">NV</option>
+							<option value="NY">NY</option>
+							<option value="ND">ND</option>
+							<option value="OH">OH</option>
+							<option value="OK">OK</option>
+							<option value="OR">OR</option>
+							<option value="PA">PA</option>
+							<option value="RI">RI</option>
+							<option value="SC">SC</option>
+							<option value="SD">SD</option>
+							<option value="TN">TN</option>
+							<option value="TX">TX</option>
+							<option value="UT">UT</option>
+							<option value="VT">VT</option>
+							<option value="VA">VA</option>
+							<option value="WA">WA</option>
+							<option value="WI">WI</option>	
+							<option value="WV">WV</option>
+							<option value="WY">WY</option>
+						</select>	
+					</td>
+				</tr>
+				<tr><td><strong><label for="zip">Zip Code</label></strong></td></tr>
+				<tr><td><input name="zip" placeholder="12345" type="text" required id="zip"></td></tr>
+				<tr><td><strong><label for="phone">Phone</label></strong></td><td><strong><label for="email">Email</label></strong></td></tr>
+				<tr><td><input name="phone" placeholder="123-456-7891" type="text" required id="phone"></td>
+					<td><input name="email" placeholder="E-mail" type="text" required id="email"></td></tr>
+				<tr><td><strong><label for="comments">Comments</label></strong></td></tr>
+			</table>
+			<table border="0" cellpadding="5" cellspacing="5">
+				<tr><td><textarea name="comments" placeholder="Special delivery instructions..." rows="11" cols="47" id="comments"></textarea></td>
+				</tr>
+				</table>
+		</div>
+		<div class="right">		
+				<table border="0" cellpadding="5" cellspacing="5">
+				<tr><td><strong><label for="crust">Crust</crust></strong></td></tr>
+				<tr><td>
+					<select name="crust" id="crust">
+						<option value="none" selected disabled hidden>--</option>
+						<option title="Our original recipe seasoned with a selection of our speciality spices and lightly buttered." value="original">Original</option>
+						<option title="Authentic Naples style baked in a wood-fired oven." value="neo">Neopolitan</option>
+						<option title="Handstretched thin with a bit of sweetness." value="ny">New York</option>
+						<option title="Stuffed with gooey melty mozerella." value="stuffed">Stuffed</option>
+						<option title="Chicago style deep dish loaded with copious amounts of our famous pizza sauce." value="deepdish">Deep Dish</option>
+						<option title="Whole grain flatbread crust for the health-conscious." value="flat">Flatbread</option>
+						<option title="You heard us right. All your favorite toppings baked in a THICK BED of smoky bacon." value="bacon">Bacon</option>
+						<option title="Think Oreo cheesecake only with your favorite pizza toppings. YUM!" value="oreo">Oreo</option>
+						<option title="Your choice of toppings baked on our original crust and then scraped off and served seperately." value="trump">The Donald</option>
+					</select></td>
+				</tr>
+			</table>
+			
+			<table border="0" cellpadding="5" cellspacing="5">
+				<tr><td><strong>Size</strong></td></tr>
+			</table>
+
+			<table class="size">
+				<tr>
+					<td><input value="cupcake" name="size" type="radio" title="12 bite-sized portions baked in a cupcake pan" id="cupcake"><p class="sizes">
+						<label for="cupcake" title="12 bite-sized portions baked in a cupcake pan"> CUPCAKES</label></p></td>
+					<td><input value="personal" name="size" type="radio" title="6 inches" id="personal"><p class="sizes">
+						<label for="personal" title="6 inches" > PERSONAL</label></p></td>
+					<td><input value="small" name="size" type="radio" title="10 inches"  id="small"><p class="sizes">
+						<label for="small" title="10 inches"> SMALL</label></p></td>
+				</tr>
+				<tr>
+					<td><input value="medium" name="size" type="radio" title="12 inches"  id="medium"><p class="sizes">
+						<label for="medium" title="12 inches"> MEDIUM</label></p></td>
+					<td><input value="large" name="size" type="radio" title="14 inches" id="large"><p class="sizes">
+						<label for="large" title="14 inches"> LARGE</label></p></td>
+					<td><input value="xtra-large" name="size" type="radio" title="18 inches" id="xtra-large"><p class="sizes">
+						<label for="xtra-large" title="18 inches"> XTRA-LARGE</label></p></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="5" cellspacing="5">
+				<tr><td><strong>Speciality Sizes (3-Day Prep)</strong></td></tr>
+			</table>
+			
+			<table class="sizespecial">
+				<tr>
+					<td><input value="party" name="size" type="radio" title="Additional $29.99 processing fee added at checkout" id="party">
+						<p class="sizes">
+						<label for="party" title="Additional $29.99 processing fee added at checkout">PARTY</label> - <em>(3 Feet Serves 20)</em></p>
+					</td>
+				</tr>
+				<tr>
+					<td><input value="bigly" name="size" type="radio" title="Additional $199.99 processing fee added added at checkout" id="bigly">
+						<p class="sizes">
+						<label for="bigly" title="Additional $199.99 processing fee added added at checkout">BIGLY</label> - <em>(8 feet Serves 50)</em></p>
+					</td>
+				</tr>
+				<tr>
+					<td><input value="truck" name="size" type="radio" title="Additional $499.99 processing fee added at checkout - Delivered via UPS Freight" id="truck">
+						<p class="sizes">
+						<label for="truck" title="Additional $499.99 processing fee added at checkout - Delivered via UPS Freight">TRUCK</label> - <em>(A MASSIVE 17 Feet Across Serves OVER 100)</em></p></td>
+				</tr>
+			</table>
+			<img src="img/pizzaorder.jpg" class="pizzaorder">
+		</div>
+			
+			<table class="toppings">
+				<tr><td><strong>Meats</strong></td></tr>
+				<tr><td>
+				<p class="desc">
+				ETHICALLY SOURCED
+				</p></td></tr>
+				<tr>
+					<td class="toppingpic"><label for="pepperoni"><img class="four" src="img/toppings/pepperoni.jpg"></label></td>
+					<td class="toppingpic"><label for="sausage"><img class="four" src="img/toppings/sausage.jpg"></label></td>
+					<td class="toppingpic"><label for="salami"><img class="four" src="img/toppings/salami.jpg"></label></td>
+					<td class="toppingpic"><label for="ham"><img class="four" src="img/toppings/ham.jpg"></label></td>
+				</tr>
+				<tr class="selection">
+					<td class="topping"><input name="toppings[]" value="pepperoni" type="checkbox" id="pepperoni"><label for="pepperoni">Pepperoni</label></td>
+					<td class="topping"><input name="toppings[]" value="sausage" type="checkbox" id="sausage"><label for="sausage">Sausage</label></td>
+					<td class="topping"><input name="toppings[]" value="salami" type="checkbox" id="salami"><label for="salami">Salami</label></td>
+					<td class="topping"><input name="toppings[]" value="ham" type="checkbox" id="ham"><label for="ham">Ham</label></td>
+				</tr>
+				<tr>
+					<td class="toppingpic"><label for="bacon"><img class="four" src="img/toppings/bacon.jpg"></label></td>
+					<td class="toppingpic"><label for="steak"><img class="four" src="img/toppings/steak.jpg"></label></td>
+					<td class="toppingpic"><label for="chicken"><img class="four" src="img/toppings/chicken.jpg"></label></td>
+					<td class="toppingpic"><label for="spam"><img class="four" src="img/toppings/spam.jpg"></label></td>
+				</tr>
+				<tr>
+					<td class="topping"><input id="bacon" name="toppings[]" value="bacon" type="checkbox"><label for="bacon">Bacon</label></td>
+					<td class="topping"><input id="steak" name="toppings[]" value="steak" type="checkbox"><label for="steak">Steak</label></td>
+					<td class="topping"><input id="chicken" name="toppings[]" value="chicken" type="checkbox"><label for="chicken">Grilled Chicken</label></td>
+					<td class="topping"><input id="spam" name="toppings[]" value="spam" type="checkbox"><label for="spam">Spam</label></td>
+				</tr>
+			</table>
+			
+			<table class="toppings">
+				<tr><td><strong>Cheese</strong></td></tr>
+				<tr><td>
+				<p class="desc">
+				MADE IN WY
+				</p></td></tr>
+				<tr>
+					<td class="toppingpic"><label for="mozarella"><img class="four" src="img/toppings/mozarella.jpg"></label></td>
+					<td class="toppingpic"><label for="cheddar"><img class="four" src="img/toppings/cheddar.jpg"></label></td>
+					<td class="toppingpic"><label for="bleu"><img class="four" src="img/toppings/bleu.jpg"></label></td>
+					<td class="toppingpic"><label for="feta"><img class="four" src="img/toppings/feta.jpg"></label></td>
+				</tr>
+				<tr>
+					<td class="topping"><input id="mozarella" name="toppings[]" value="mozarella" type="checkbox"><label for="mozarella">Mozarella</label></td>
+					<td class="topping"><input id="cheddar" name="toppings[]" value="cheddar" type="checkbox"><label for="cheddar">Cheddar</label></td>
+					<td class="topping"><input id="bleu" name="toppings[]" value="bleu" type="checkbox"><label for="bleu">Bleu Cheese</label></td>
+					<td class="topping"><input id="feta" name="toppings[]" value="feta" type="checkbox"><label for="feta">Feta</label></td>
+				</tr>
+			</table>
+			
+			<table class="toppings">
+				<tr><td><strong>Vegetables</strong></td></tr>
+				<tr><td>
+				<p class="desc">
+				FRESH CUT DAILY
+				</p></td></tr>
+				<tr>
+					<td class="toppingpic"><label for="mushrooms"><img class="four" src="img/toppings/mushrooms.jpg"></label></td>
+					<td class="toppingpic"><label for="tomatoes"><img class="four" src="img/toppings/tomatoes.jpg"></label></td>
+					<td class="toppingpic"><label for="olives"><img class="four" src="img/toppings/olives.jpg"></label></td>
+					<td class="toppingpic"><label for="greenpepper"><img class="four" src="img/toppings/greenpepper.jpg"></label></td>
+				</tr>
+				<tr>
+					<td class="topping"><input id="mushrooms" name="toppings[]" value="mushrooms" type="checkbox"><label for="mushrooms">Mushrooms</label></td>
+					<td class="topping"><input id="tomatoes" name="toppings[]" value="tomatoes" type="checkbox"><label for="tomatoes">Sun Dried Tomatoes</label></td>
+					<td class="topping"><input id="olives" name="toppings[]" value="olives" type="checkbox"><label for="olives">Black Olives</label></td>
+					<td class="topping"><input id="greenpepper" name="toppings[]" value="greenpep" type="checkbox"><label for="greenpepper">Green Peppers</label></td>
+				</tr>
+				<tr>
+					<td class="toppingpic"><label for="redpepper"><img class="four" src="img/toppings/redpepper.jpg"></label></td>
+					<td class="toppingpic"><label for="onions"><img class="four" src="img/toppings/onions.jpg"></label></td>
+					<td class="toppingpic"><label for="pineapple"><img class="four" src="img/toppings/pineapple.jpg"></label></td>
+					<td class="toppingpic"><label for="spinach"><img class="four" src="img/toppings/spinach.png"></label></td>
+				</tr>
+				<tr>
+					<td class="topping"><input id="redpepper" name="toppings[]" value="redpepper" type="checkbox"><label for="redpepper">Red Peppers</label></td>
+					<td class="topping"><input id="onions" name="toppings[]" value="onions" type="checkbox"><label for="onions">Sweet Red Onions</label></td>
+					<td class="topping"><input id="pineapple" name="toppings[]" value="pineapple" type="checkbox"><label for="pineapple">Pineapple</label></td>
+					<td class="topping"><input id="spinach" name="toppings[]" value="spinach" type="checkbox"><label for="spinach">Spinach</label></td>
+				</tr>			
+				<tr>
+					<td class="toppingpic"><label for="artichoke"><img class="four" src="img/toppings/artichoke.jpg"></label></td>
+					<td class="toppingpic"><label for="arugula"><img class="four" src="img/toppings/arugula.jpg"></label></td>
+					<td class="toppingpic"><label for="banpep"><img class="four" src="img/toppings/bananapepper.jpg"></label></td>
+					<td class="toppingpic"><label for="jalapeno"><img class="four" src="img/toppings/jalapeno.jpg"></label></td>
+				</tr>
+				<tr>
+					<td class="topping"><input id="artichoke" name="toppings[]" value="artichoke" type="checkbox"><label for="artichoke">Artichoke Hearts</label></td>
+					<td class="topping"><input id="arugula" name="toppings[]" value="arugula" type="checkbox"><label for="arugula">Arugula</label></td>
+					<td class="topping"><input id="banpep" name="toppings[]" value="banpep" type="checkbox"><label for="banpep">Banana Peppers</label></td>
+					<td class="topping"><input id="jalapeno" name="toppings[]" value="jalapeno" type="checkbox"><label for="jalapeno">Jalapenos</label></td>
+			</table>
+			
+			<table class="toppings">
+				<tr><td><strong>Exotic</strong></td></tr>
+				<tr><td>
+				<p class="desc">
+				FEELING ADVENTUROUS?
+				</p></td></tr>
+				<tr>
+					<td class="toppingpic"><label for="bull"><img class="four" src="img/toppings/bull.jpg"></label></td>
+					<td class="toppingpic"><label for="crawfish"><img class="four" src="img/toppings/crawfish.jpg"></label></td>
+					<td class="toppingpic"><label for="sardine"><img class="four" src="img/toppings/sardine.jpg"></label></td>
+					<td class="toppingpic"><label for="duck"><img class="four" src="img/toppings/duck.jpg"></label></td>
+				</tr>
+				<tr>
+					<td class="topping"><input id="bull" name="toppings[]" value="bull" type="checkbox"><label for="bull">Rocky Mountain Oysters</label></td>
+					<td class="topping"><input id="crawfish" name="toppings[]" value="crawdads" type="checkbox"><label for="crawfish">Crawfish (1 lb.)</label></td>
+					<td class="topping"><input id="sardine" name="toppings[]" value="sardines" type="checkbox"><label for="sardine">Pickled Sardines</label></td>
+					<td class="topping"><input id="duck" name="toppings[]" value="duck" type="checkbox"><label for="duck">Ground Duck Surprise</label></td>
+				</tr>
+			</table>
+			
+			<table class="toppings">
+				<tr><td><strong>Sweets</strong></td></tr>
+				<tr><td>
+				<p class="desc">
+				DON'T FORGET DESSERT
+				</p></td></tr>
+				<tr>
+					<td class="toppingpic"><label for="cream"><img class="four" src="img/toppings/creamcheese.jpg"></label></td>
+					<td class="toppingpic"><label for="strawberries"><img class="four" src="img/toppings/strawberries.jpg"></label></td>
+					<td class="toppingpic"><label for="blueberries"><img class="four" src="img/toppings/blueberries.jpg"></label></td>
+					<td class="toppingpic"><label for="oranges"><img class="four" src="img/toppings/orange.jpg"></label></td>
+				</tr>
+				<tr>
+					<td class="topping"><input id="cream" name="toppings[]" value="creamcheese" type="checkbox"><label for="cream">Cream Cheese</label></td>
+					<td class="topping"><input id="strawberries" name="toppings[]" value="strawberries" type="checkbox"><label for="strawberries">Strawberries</label></td>
+					<td class="topping"><input id="blueberries" name="toppings[]" value="blueberries" type="checkbox"><label for="blueberries">Blueberries</label></td>
+					<td class="topping"><input id="oranges" name="toppings[]" value="oranges" type="checkbox"><label for="oranges">Mandarin Oranges</label></td>
+				</tr>
+				<tr>
+					<td class="toppingpic"><label for="kiwi"><img class="four" src="img/toppings/kiwi.jpg"></label></td>
+					<td class="toppingpic"><label for="chocolate"><img class="four" src="img/toppings/chocolate.jpg"></label></td>
+					<td class="toppingpic"><label for="gummies"><img class="four" src="img/toppings/gummies.jpg"></label></td>
+					<td class="toppingpic"><label for="caramel"><img class="four" src="img/toppings/caramel.jpg"></label></td>
+				</tr>
+				<tr>
+					<td class="topping"><input id="kiwi" name="toppings[]" value="kiwi" type="checkbox"><label for="kiwi">Kiwi</label></td>
+					<td class="topping"><input id="chocolate" name="toppings[]" value="chocolate" type="checkbox"><label for="chocolate">Chocolate Shavings</label></td>
+					<td class="topping"><input id="gummies" name="toppings[]" value="gummybears" type="checkbox"><label for="gummies">Gummy Bears</label></td>
+					<td class="topping"><input id="caramel" name="toppings[]" value="caramel" type="checkbox"><label for="caramel">Melted Caramel</label></td>
+				</tr>
+			</table>
+			
+			<table border="0" cellpadding="5" cellspacing="30" class="submit">
+			<tr><td><input type="reset" value="RESET"></td><td><input type="submit" value="ORDER"></td></tr>
+			</table>
+			</form></p>
+			
+			<table>
+				<tr>
+				<td><p class="disc">
+				By clicking ORDER you acknowledge that your personal information may be shared with third parties for marketing purposes. You will also automatically be signed up for our weekly mailing list "Pizza Bros Club" at a recurring charge of $19.95 per month. To cancel your subscription you must mail a certified letter to our corporate headquarters that is notarized and postmarked no later than 48 hours after placing your order. Any letters received after this period will be ignored. Pizza delivery times can range between 30 minutes to 6 hours. Complete or partial delivery is not guaranteed. Driver not responsible for property damage. ABSOLUTELY NO REFUNDS!
+				</p></td></tr>
+			</table>
+		
+		<!-- Layout End -->
+		</div>
+		</div>
+		</div>
+		<div class="footer">
+			<p class="attribution">
+			Fictional website by <a href="http://acarlis9.freesite.vip">Aaron Carlisle.</a>
+			</p>
+			<p class="attribution">
+			All photos used freely and with permission from <a class="attlink" href="https://unsplash.com/license">Unsplash</a>, <a class="attlink" href="https://pixabay.com/service/license/">
+			Pixabay</a>, and <a class="attlink" href="https://www.pexels.com/license/">Pexels.</a></p>
+		</div>
+	</body>
+</html>

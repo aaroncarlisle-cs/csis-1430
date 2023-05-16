@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Aaron's Pizza Parlor - Specialties</title>
+	</head>
+	<body>
+		<h1>Order a signature Pizza from Aaron's Pizza Parlor</h1>
+		
+		<p><ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="order.html">Order</a></li>
+		</ul></p>
+		
+		<p>
+		<table border="0" cellpadding="5" cellspacing="1">
+		<form method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
+			<tr><td><strong>First Name</strong></td><td><strong>Last Name</strong></td></tr>
+			<tr>
+				<td><input name="first" placeholder="First Name" type="text"></td>
+				<td><input name="last" placeholder="Last Name" type="text"></td>
+			</tr>
+			<tr><td><strong>Address</strong></td></tr>
+		</table>
+		<table border="0" cellpadding="5" cellspacing="1">
+			<tr><td><input name="add1" placeholder="Address 1" type="text" size="47" required></td></tr>
+			<tr><td><input name="add2" placeholder="Address 2" type="text" size="47"></td></tr>
+		</table>
+		<table border="0" cellpadding="5" cellspacing="1">
+			<tr><td><strong>City</strong></td><td><strong>State</strong></td></tr>
+			<tr><td><input name="city" placeholder="City" type="text" required></td>
+				<td>
+					<select name="state" required>
+						<option value="none" selected disabled hidden>--</option>
+						<option value="AL">AL</option>
+						<option value="AK">AK</option>
+						<option value="AR">AR</option>	
+						<option value="AZ">AZ</option>
+						<option value="CA">CA</option>
+						<option value="CO">CO</option>
+						<option value="CT">CT</option>
+						<option value="DC">DC</option>
+						<option value="DE">DE</option>
+						<option value="FL">FL</option>
+						<option value="GA">GA</option>
+						<option value="HI">HI</option>
+						<option value="IA">IA</option>	
+						<option value="ID">ID</option>
+						<option value="IL">IL</option>
+						<option value="IN">IN</option>
+						<option value="KS">KS</option>
+						<option value="KY">KY</option>
+						<option value="LA">LA</option>
+						<option value="MA">MA</option>
+						<option value="MD">MD</option>
+						<option value="ME">ME</option>
+						<option value="MI">MI</option>
+						<option value="MN">MN</option>
+						<option value="MO">MO</option>	
+						<option value="MS">MS</option>
+						<option value="MT">MT</option>
+						<option value="NC">NC</option>	
+						<option value="NE">NE</option>
+						<option value="NH">NH</option>
+						<option value="NJ">NJ</option>
+						<option value="NM">NM</option>			
+						<option value="NV">NV</option>
+						<option value="NY">NY</option>
+						<option value="ND">ND</option>
+						<option value="OH">OH</option>
+						<option value="OK">OK</option>
+						<option value="OR">OR</option>
+						<option value="PA">PA</option>
+						<option value="RI">RI</option>
+						<option value="SC">SC</option>
+						<option value="SD">SD</option>
+						<option value="TN">TN</option>
+						<option value="TX">TX</option>
+						<option value="UT">UT</option>
+						<option value="VT">VT</option>
+						<option value="VA">VA</option>
+						<option value="WA">WA</option>
+						<option value="WI">WI</option>	
+						<option value="WV">WV</option>
+						<option value="WY">WY</option>
+					</select>	
+				</td>
+			</tr>
+			<tr><td><strong>Zip Code</strong></td></tr>
+			<tr><td><input name="zip" placeholder="12345" type="text" required></td></tr>
+			<tr><td><strong>Phone</strong></td><td><strong>E-mail</strong></td></tr>
+			<tr><td><input name="phone" placeholder="123-456-7891" type="text" required></td>
+				<td><input name="email" placeholder="E-mail" type="text" required></td></tr>
+			<tr><td><strong>Comments</strong></td></tr>
+		</table>
+		<table border="0" cellpadding="5" cellspacing="1">
+			<tr><td><textarea name="comments" placeholder="Special delivery instructions..." rows="10" cols="49"></textarea></td></tr>
+			<tr><td><strong>Crust</strong></td></tr>
+			<tr><td>
+				<select name="crust">
+					<option value="none" selected disabled hidden>--</option>
+					<option title="Our original recipe seasoned with a selection of our speciality spices and lightly buttered." value="original">Original</option>
+					<option title="Authentic Naples style baked in a wood-fired oven." value="neo">Neopolitan</option>
+					<option title="Handstretched thin with a bit of sweetness." value="ny">New York</option>
+					<option title="Stuffed with gooey melty mozerella." value="stuffed">Stuffed</option>
+					<option title="Chicago style deep dish loaded with copious amounts of our famous pizza sauce." value="deepdish">Deep Dish</option>
+					<option title="Whole grain flatbread crust for the health-conscious." value="flat">Flatbread</option>
+					<option title="You heard us right. All your favorite toppings baked in a THICK BED of smoky bacon." value="bacon">Bacon</option>
+					<option title="Think Oreo cheesecake only with your favorite pizza toppings. YUM!" value="oreo">Oreo</option>
+					<option title="Your choice of toppings baked on our original crust and then scraped off and served seperately." value="trump">The Donald</option>
+				</select></td>
+			</tr>
+		</table>
+		
+		<table border="0" cellpadding="5" cellspacing="1">
+			<tr><td><strong>Size</strong></td></tr>
+		</table>
+
+		<table class="size">
+			<tr>
+				<td><input value="cupcake" name="size" type="radio" title="12 bite-sized portions baked in a cupcake pan">CUPCAKES</td>
+				<td><input value="personal" name="size" type="radio" title="7 inches">PERSONAL</td>
+				<td><input value="small" name="size" type="radio" title="10 inches">SMALL</td>
+			</tr>
+			<tr>
+				<td><input value="medium" name="size" type="radio" title="12 inches">MEDIUM</td>
+				<td><input value="large" name="size" type="radio" title="14 inches">LARGE</td>
+				<td><input value="xtra-large" name="size" type="radio" title="18 inches">XTRA-LARGE</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="5" cellspacing="1">
+			<tr><td><strong>Speciality Sizes (3-Day Prep)</strong></td></tr>
+		</table>
+		
+		<table class="sizespecial">
+			<tr>
+				<td><input value="party" name="size" type="radio" title="3 feet - Serves 20">PARTY - <em>(3 Feet Serves 20)</em></td>
+				<td><input value="bigly" name="size" type="radio" title="8 feet - Serves 50">BIGLY - <em>(8 feet Serves 50)</em></td>
+				<td><input value="truck" name="size" type="radio" title="A MASSIVE 17 feet across - Serves OVER 100 (Additional $499.00 processing fee at checkout)">
+					TRUCK - <em>(A MASSIVE 17 Feet Across Serves OVER 100)</em></td>
+			</tr>
+		</table>
+		
+		<table class="toppingsmeat">
+			<tr><td><strong>Meat</strong></td></tr>
+			<tr>
+				<td><input name="toppings[]" value="pepperoni" type="checkbox">Pepperoni</td>
+				<td><input name="toppings[]" value="sausage" type="checkbox">Sausage</td>
+				<td><input name="toppings[]" value="salami" type="checkbox">Salami</td>
+				<td><input name="toppings[]" value="ham" type="checkbox">Ham</td>
+			</tr>
+			<tr>
+				<td><input name="toppings[]" value="bacon" type="checkbox">Bacon</td>
+				<td><input name="toppings[]" value="chicken" type="checkbox">Grilled Chicken</td>
+				<td><input name="toppings[]" value="steak" type="checkbox">Steak</td>
+				<td><input name="toppings[]" value="spam" type="checkbox">Spam</td>
+			</tr>
+		</table>
+		
+		<table class="toppingscheese">
+			<tr><td><strong>Cheese</strong></td></tr>
+			<tr>
+				<td><input name="toppings[]" value="mozarella" type="checkbox">Mozarella</td>
+				<td><input name="toppings[]" value="cheddar" type="checkbox">Aged English Cheddar</td>
+				<td><input name="toppings[]" value="pepperjack" type="checkbox">Pepper Jack</td>
+				<td><input name="toppings[]" value="spicycheddar" type="checkbox">Habanero Cheddar</td>
+			</tr>
+		</table>
+		
+		<table class="toppingsveg">
+			<tr><td><strong>Vegetables</strong></td></tr>
+			<tr>
+				<td><input name="toppings[]" value="mushrooms" type="checkbox">Mushrooms</td>
+				<td><input name="toppings[]" value="tomatoes" type="checkbox">Sun Dried Tomatoes</td>
+				<td><input name="toppings[]" value="olives" type="checkbox">Mediterranean Black Olives</td>
+				<td><input name="toppings[]" value="greenpep" type="checkbox">Green Peppers</td>
+				<td><input name="toppings[]" value="redpep" type="checkbox">Roasted Red Peppers</td>
+				<td><input name="toppings[]" value="onion" type="checkbox">Sweet Red Onions</td>
+			</tr>
+			<tr>
+				<td><input name="toppings[]" value="pineapple" type="checkbox">Pineapples</td>
+				<td><input name="toppings[]" value="spinach" type="checkbox">Spinach</td>
+				<td><input name="toppings[]" value="artichoke" type="checkbox">Artichoke Hearts</td>
+				<td><input name="toppings[]" value="arrugula" type="checkbox">Arrugula</td>
+				<td><input name="toppings[]" value="banpeppers" type="checkbox">Banana Peppers</td>
+				<td><input name="toppings[]" value="jalapeno" type="checkbox">Jalapeno Peppers</td>
+			</tr>			
+		</table>
+		
+		<table class="toppingsspecial">
+			<tr><td><strong>Feeling Adventurous?</strong></td></tr>
+			<tr>
+				<td><input name="toppings[]" value="bull" type="checkbox">Rocky Mountain Oysters</td>
+				<td><input name="toppings[]" value="crawdads" type="checkbox">Crawfish (1 lb.)</td>
+				<td><input name="toppings[]" value="sardines" type="checkbox">Pickled Sardines</td>
+				<td><input name="toppings[]" value="duck" type="checkbox">Ground Duck Surprise</td>
+			</tr>
+		</table>
+		
+		<table class="toppingssweets">
+			<tr><td><strong>Sweets</strong></td></tr>
+			<tr>
+				<td><input name="toppings[]" value="creamcheese" type="checkbox">Cream Cheese (substitute pizza sauce)</td>
+				<td><input name="toppings[]" value="strawberries" type="checkbox">Strawberries</td>
+				<td><input name="toppings[]" value="blueberries" type="checkbox">Blueberries</td>
+				<td><input name="toppings[]" value="oranges" type="checkbox">Mandarin Oranges</td>
+			</tr>
+			<tr>
+				<td><input name="toppings[]" value="kiwi" type="checkbox">Kiwi</td>
+				<td><input name="toppings[]" value="pbcups" type="checkbox">Peanut Butter Cups</td>
+				<td><input name="toppings[]" value="gummybears" type="checkbox">Gummy Bears</td>
+				<td><input name="toppings[]" value="caramel" type="checkbox">Melted Caramel</td>
+			</tr>
+		</table
+		
+		<table border="0" cellpadding="5" cellspacing="1">
+		<tr><td><input type="reset"><input type="submit"></td></tr>
+		</table>
+		</form></p>
+	</body>
+</html>
