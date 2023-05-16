@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Tic Tac Toe!</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+		<script src="js/script.js"></script>
+	</head>
+	<body onload="start();">
+		<div class="content">
+			<h2>Tic Tac Toe!</h2>
+		
+			<div class="message">
+				<p id="game-message" class="instruction">New Game!</p>
+			</div>
+			
+			<div id="board-placeholder" class="">
+				<h2 id="start-message" class="placeholder"></h2>
+					<form action="javascript:void(0);">
+						<input id="player1" class="show" type="text" value="Player 1">
+						<input id="player2" class="hide" type="text" value="Player 2">
+						<input id="submit" class="show" type="submit" value="Enter" onclick="playerOneName();">
+					</form>
+				<button id="play-again" onclick="restart();" class="hide">Play Again?</button>
+			</div>
+			
+			<div id="p1score"><h4 id="p1name"></h4><h4 id="p1wins"></h4>
+				<div id="ties">
+					<h4 id="ties-title"></h4>
+					<h4 id="numties"></h4>
+				</div>
+			</div>
+			
+			<div id="p2score"><h4 id="p2name"></h4><h4 id="p2wins"></h4>
+				<button id="stop-audio" onclick="stopAudio();" class="hide">Stop Music</button>
+				<button id="play-audio" onclick="playAudio();" class="hide">Play Music</button>
+			</div>
+			
+			<div id="board"></div>
+			<div class="outro">
+			<p class="bye">Thank you for checking out my "Tic Tac Toe" JavaScript Program!</p>
+			<p class="bye">Have a fantastic day!</p>
+			<p class="bye"><em>-Aaron</em></p>
+			<img src="img/husky.gif" class="husky">
+			</div>
+		</div>
+		<audio id="audio-win" src="audio/win.mp3" preload="auto" class="hide"></audio>
+		<audio id="audio-tie" src="audio/tie.mp3" preload="auto" class="hide"></audio>
+		<audio id="audio-play" src="audio/play.mp3" preload="auto" class="hide" loop></audio>
+		<audio id="audio-click" src="audio/click.mp3" preload="auto" class="hide"></audio>
+	</body>
+</html>

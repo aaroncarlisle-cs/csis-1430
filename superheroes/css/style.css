@@ -1,0 +1,90 @@
+
+h1
+	{
+		font-family: Jazz LET, fantasy;
+		font-size: 50px;
+		width: 1280px;
+		margin: 0 auto;
+		border: 5px solid black;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+h2
+	{
+		font-family: Courier, monospace;
+		line-height: 1.5;
+		font-size: 30px;
+		width: 1280px;
+		margin: 0 auto;
+		border: 5px solid black;
+		border-bottom: 0px;
+		padding: 10px;
+	}
+p
+	{
+		font-family: Arial, sans-serif;
+		line-height: 1.5;
+		font-size: 22px;
+		width: 1280px;
+		margin: 0 auto;
+		border: 5px solid black;
+		border-top: 5px dashed black;
+		border-bottom: 5px solid black;
+		margin-bottom: 20px;
+		padding: 10px;
+		background-color: #E4EBEB;
+		text-align: justify;
+		
+	}
+div.dc
+	{
+		width: 85%;
+		background-color: #A8BCE0;
+		margin: 0 auto;
+		padding: 10px;
+		border: 10px inset #A8BCE0;
+		border-bottom: 5px dashed black;
+	}
+div.marvel
+	{
+		width: 85%;
+		background-color: #FA928E;
+		margin: 0 auto;
+		padding: 10px;
+		border: 10px outset #FA928E;
+	}
+span.comic
+	{
+		display: inline-block;
+		font-family: chiller;
+		font-size: 30px;
+		font-weight: bold;
+	}
+span.creator
+	{
+		display: inline-block;
+		font-family: American Typewriter, serif;
+		font-size: 24px;
+		background-color: #D2FA8C;
+		padding: 0 5px;
+	}
+span.herointro
+	{
+		display: inline-block;
+		font-family: Impact, fantasy;
+		font-size: 22px;
+	}
+span.date
+	{
+		display: inline-block;
+		font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+		font-style: italic;
+		font-size: 18px;
+	}
+span.ref
+	{
+		display: inline-block;
+		font-family: FreeMono, monospace;
+		font-size: 12px;
+	}
+
