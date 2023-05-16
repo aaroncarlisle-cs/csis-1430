@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+h1
+	{
+		font-family: Chiller;
+		color: #E3411E;
+		font-size: 75px;
+		width: 1280px;
+		margin: 0 auto;
+		border: 5px ridge #959696;
+		padding: 10px;
+		margin-bottom: 7px;
+		text-align: center;
+		background-color: #CBD3D3;
+	}
+body
+	{
+		background-color: black;
+	}
+p.temp
+	{
+		background-color: #E4E7E7;
+		width: 1280px;
+		margin: 0 auto;
+		border: 5px ridge #959696;
+		padding: 10px;
+		margin-bottom: 20px;
+		height: 1280px;
+	}
+.menu
+{
+	width: 100%;
+	height: 10%
+	boxsizing: border-box;
+	background-color: #0B1218;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index: 1;
+	text-align: right;
+	font-family: 'Anton', sans-serif;
+	font-size: 24px;
+}
+.content
+{
+	padding-top: 100px;
+}
+ul li, ul li a
+{
+	display: inline-block;
+}
+
+li
+{
+	border: 0px solid black;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+ul
+{
+	text-align: right;
+}
+
+ul li a
+{
+	color: #E3411E;
+	text-decoration: none;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+ul li a:hover
+{
+	color: cyan;
+	text-decoration: wavy;
+}

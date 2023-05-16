@@ -1,0 +1,258 @@
+body
+{
+	background-color: black;
+	background-image: url("../img/bg.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.primary
+{
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	opacity: 1;
+	padding-bottom: 0%;
+	margin-bottom: 0;
+}
+.secondary
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+.mynav
+{
+	background-color: black;
+	background: rgba(227,242,243,.7);
+}
+.main
+{
+	padding-top: 50px;
+}
+.mybg
+{
+	background: rgba(227,242,243,.7);
+}
+div.author
+{
+	background-image: url("../img/mesplash.png");
+	background-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 140px;
+
+}
+div.authormd
+{
+	background-image: url("../img/mesplash.jpg");
+	background-color: black;
+	background-size: cover;
+	height: 700px;
+	background-position: center;
+}
+div.info
+{
+	height: 350px;
+	background: rgba(227,242,243,.8);
+	background-image: url("../img/infobg.jpg");
+	background-size: cover;
+}
+div.infomd
+{
+	height: 350px;
+	background: rgba(227,242,243,.8);
+	background-image: url("../img/infobg.jpg");
+	background-size: cover;
+}
+
+.infocard
+{
+	margin-top: 20px;
+	min-height: 310px;
+	padding: 5%;
+	padding-top: 60px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-family: 'Nunito', sans-serif;
+	animation-name: infoanimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+}
+.infomdcard
+{
+	margin-top: 85px;
+	min-height: 180px;
+	padding: 5%;
+	padding-top: 60px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-family: 'Nunito', sans-serif;
+	animation-name: infoanimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.infobutton
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+div.quoteDisplay
+{
+	
+}
+div.quoteDisplaymd
+{
+	height: 350px;
+	background-image: url("../img/quotesplashmd.jpg");
+	background-color: black;
+	background-size: cover;
+}
+div.quotecover
+{
+	background: rgba(0, 0, 0, .8);
+	height: 252px;
+	margin-top: 49px;
+	color: #E3F2F3;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+	padding: 5%;
+	animation-name: quoteanimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.quotebutton
+{
+	color: white;
+}
+div.p1
+{
+	background-image: url("../img/p1bg.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+div.p2
+{
+	background-image: url("../img/p2bg.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+div.p3
+{
+	background-image: url("../img/p3bg.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+div.pcover
+{
+	background: rgba(0, 0, 0, .8);
+	color: #E3F2F3;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	position: relative;
+	padding: 5%;
+	margin-top: 200px;
+	margin-bottom: 0;
+	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 5%;
+}
+.authorfoot
+{
+	background-color: #E3F2F3;
+	position: relative;
+	top: 40%;
+	opacity: .7;
+	padding-left: 5%;
+	animation-name: banneranimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.authormdfoot
+{
+	background-color: #E3F2F3;
+	position: relative;
+	top: 66%;
+	opacity: .7;
+	padding-left: 5%;
+	animation-name: banneranimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes banneranimation {
+  from {opacity: .5;}
+  to {opacity: .8;}
+}
+@keyframes quoteanimation {
+  from {background: rgba(0, 0, 0, .5);}
+  to {background: rgba(0, 0, 0, .8);}
+}
+@keyframes infoanimation {
+  from {background: rgba(248, 249, 250, .8);}
+  to {background: rgba(248, 249, 250, 1);}
+}
+@keyframes nameanimation {
+	from {
+    transform: translateX(-50%);
+		opacity: 0;
+  }
+  to {
+    transform: none;
+		opacity: .8;
+  }
+}
+@keyframes bounceanimation1 
+{
+	from { margin-left: 0%; opacity: 1; }
+	to {margin-left: 1%; opacity: .6;}
+}
+@keyframes bounceanimation2
+{
+	from { margin-left: 15%; opacity: 1; }
+	to {margin-left: 16%; opacity: .6;}
+}
+.name
+{
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	padding-bottom: 0%;
+	margin-bottom: 0;
+	animation-name: nameanimation, bounceanimation1;
+	animation-duration: 3s, 4s;
+	animation-delay: 0s, 4s;
+	animation-iteration-count: 1, infinite;
+	animation-direction: normal, alternate;
+	animation-timing-function: linear, linear;
+}
+.namesub
+{
+	margin-top: 0;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	animation-name: nameanimation, bounceanimation2;
+	animation-duration: 3s, 4s;
+	animation-delay: 0s, 6s;
+	animation-iteration-count: 1, infinite;
+	animation-direction: normal, alternate;
+	margin-left: 15%;
+	animation-timing-function: linear, linear;
+}

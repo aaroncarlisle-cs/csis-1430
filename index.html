@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Aaron Carlisle's Page</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://use.typekit.net/pbb5dkb.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	
+	<body onload="start();">
+	
+		<nav class="navbar navbar-expand-md navbar-light mynav border-top border-bottom border-dark py-md-3">
+			<div class="container-fluid">
+				<a href="#" title="Click to view featured projects." onclick="featured();choose();return false;" class="quotebutton">
+					<span class="material-icons md-dark md-18 pr-5">apps</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="main-nav" class="collapse navbar-collapse justify-content-end">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle primary h5" href="#" id="navbarHtmlDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 700;" onclick="select();">HTML</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarHtmlDropdown">
+								<li><a class="dropdown-item primary h5" href="tables/index.html">YouTube Video Page</a>
+								<li><a class="dropdown-item primary h5" href="image-map/index.html">Mappin' It</a>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle primary h5" href="#" id="navbarCssDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 700;" onclick="select();">CSS</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarCssDropdown">
+								<li><a class="dropdown-item primary h5" href="superheroes/index.html">Super Heroes Page</a>
+								<li><a class="dropdown-item primary h5" href="little-boxes/index.html">Little Boxes</a>
+								<li><a class="dropdown-item primary h5" href="horizontal-menu/index.html">Horizontal Menu</a>
+								<li><a class="dropdown-item primary h5" href="pizza-2/index.html">Midterm (Pizza Site)</a>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle primary h5" href="#" id="navbarJsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 700;" onclick="select();">JAVASCRIPT</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarJsDropdown">
+								<li><a class="dropdown-item primary h5" href="js-birthday/index.html">Happy Birthday</a>
+								<li><a class="dropdown-item primary h5" href="mad-lib/index.html">Mad-lib</a>
+								<li><a class="dropdown-item primary h5" href="lottery/index.html">Lottery Number Generator</a>
+								<li><a class="dropdown-item primary h5" href="tic-tac-toe/index.html">Tic Tac Toe</a>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link primary h5" href="https://slcc.digication.com/aaron_carlisle/Home" style="font-weight: 700;">SLCC e-PORTFOLIO</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container-fluid container-xl pt-xl-1 bg-dark">
+			<div class="row border border-dark">
+				<div class="col-12 d-md-none author">
+					<div class="authorfoot">
+						<p class="name display-3">AARON CARLISLE</p>
+						<p class="namesub h4">STUDENT // GAMER // AUDIO GEEK</p>
+					</div>
+				</div>
+				<div class="d-none d-md-block col-md-7 p-0 authormd">
+					<div class="authormdfoot">
+						<p class="name display-3">AARON CARLISLE</p>
+						<p class="namesub bounce h3">STUDENT // GAMER // AUDIO GEEK</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-12 d-md-none info">
+							<div class="infocard">
+								<p class="h3 primary">CSIS 1430</p>
+								<p class="h5 secondary">
+									Introduction to Web Programming
+								</p>
+								<a href="https://slcc.digication.com/aaron_carlisle/csis-1430" class="btn btn-sm btn-outline-dark infobutton mt-4">Reflection</a>
+							</div>
+						</div>
+						<div class="d-none d-md-block col-md-12 p-0 infomd border-start border-bottom border-dark border-3">
+							<div class="infomdcard">
+								<p class="h3 primary">CSIS 1430</p>
+								<p class="h5 secondary">
+									Introduction to Web Programming
+								</p>
+								<a href="https://slcc.digication.com/aaron_carlisle/csis-1430" class="btn btn-sm btn-outline-dark infobutton">Reflection</a>
+							</div>
+						</div>
+						<div class=" col-12 d-md-block col-md-12 bg-info quoteDisplaymd p-0 border-start border-dark border-3">
+							<div class="quotecover">
+								<p id="quote" class="h5 secondary pb-2 pt-2"></p>
+								<p id="quoteSig" class="h4 primary"></p>
+								<a id="quotegen" href="#" title="Click to generate a new quote!" onclick="newQuote();select();return false;" class="quotebutton">
+									<span class="material-icons md-light md-18">shuffle</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-xl-1 justify-content-between" id="featured">
+				<div class="col-12 col-xl-4 p-0 border border-3 border-dark bg-light p1" style="min-height: 700px">
+					<div class="pcover">
+						<p class="primary h3 pb-2">
+							HTML
+						</p>
+						<p class="primary h4 pb-2">
+							Image Map
+						</p>
+						<p class="secondary h6 px-5 py-2 text-center">
+							A custom Image Map of the Solar System with clickable areas linking to educational materials by NASA.
+						</p>
+						<a href="image-map/index.html" role="button" class="btn btn-sm btn-outline-light secondary mt-3">View</a>
+					</div>
+				</div>
+				<div class="col-12 col-xl-4 p-0 border border-3 border-dark bg-light p2" style="min-height: 700px">
+					<div class="pcover">
+						<p class="primary h3 pb-2">
+							CSS
+						</p>
+						<p class="primary h4 pb-2">
+							Pizza Delivery Site
+						</p>
+						<p class="secondary h6 px-5 py-2 text-center">
+							A mock Pizza Delivery website by creator "Chad Blake." Includes working Contact and Delivery forms.
+						</p>
+						<a href="pizza-2/index.html" role="button" class="btn btn-sm btn-outline-light secondary mt-3">View</a>
+					</div>
+				</div>
+				<div class="col-12 col-xl-4 p-0 border border-3 border-dark bg-light p3" style="min-height: 700px">
+					<div class="pcover">
+						<p class="primary h3 pb-2">
+							JAVASCRIPT
+						</p>
+						<p class="primary h4 pb-2">
+							Tic Tac Toe
+						</p>
+						<p class="secondary h6 px-5 py-2 text-center">
+							A fully functional Tic Tac Toe game. Tracks both player's names, wins, and ties. Includes custom sound effects.
+						</p>
+						<a href="tic-tac-toe/index.html" role="button" class="btn btn-sm btn-outline-light secondary mt-3">View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<audio id="click" src="audio/click.mp3" preload="auto" class="hide"></audio>
+		<audio id="choose" src="audio/choose.mp3" preload="auto" class="hide"></audio>
+	</body>
+</html>
